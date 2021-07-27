@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Chat UI</title>
+  </head>
+  <body>
+    <main class="chat-ui">
+      <!-- side bar -->
+      <aside class="side-bar">
+        <div class="slide-menu">
+          <i class="fas fa-external-link-alt"></i>
+        </div>
+        <div class="search-section">
+          <h2 class="search-section__title">Search Messages</h2>
+          <div class="search-input-controllers">
+            <input
+              class="search-input"
+              type="search"
+              name="messageSearch"
+              placeholder="type & Hit Enter"
+            />
+            <i class="fas fa-search"></i>
+          </div>
+          <!-- <div class="search-input-controllers_sm">
+            <i class="fas fa-search"></i>
+          </div> -->
+        </div>
+        <hr />
+        <!-- users' right list -->
+        <div class="users-container">
+          <div class="filters">
+            <button class="recent">Recent Talks</button>
+            <button class="all">All <i class="fas fa-chevron-down"></i></button>
+          </div>
+          <div class="users-card-container">
+            <!-- user card -->
+            <div class="user-card active">
+              <div class="image-side">
+                <img
+                  class="user-img"
+                  src="assets/images/img_1.jpeg"
+                  alt="user-avatar"
+                />
+                <span class="status green"></span>
+              </div>
+              <div class="user-info">
+                <h3 class="username">Jason Roy</h3>
+                <p class="message-text">
+                  Ullamco consequat aliquip quis id excepteur.
+                </p>
+                <span class="message-time">02:19 pm</span>
+              </div>
+            </div>
+            <div class="user-card">
+              <div class="image-side">
+                <img
+                  class="user-img"
+                  src="assets/images/img_3.jpeg"
+                  alt="user-avatar"
+                />
+                <span class="status green"></span>
+              </div>
+              <div class="user-info">
+                <h3 class="username">Lisa lomi</h3>
+                <p class="message-text">
+                  Ullamco consequat aliquip quis id excepteur.
+                </p>
+                <span class="message-time">02:19 pm</span>
+              </div>
+            </div>
+            <div class="user-card">
+              <div class="image-side">
+                <img
+                  class="user-img"
+                  src="assets/images/img_4.jpeg"
+                  alt="user-avatar"
+                />
+                <span class="status red"></span>
+              </div>
+              <div class="user-info">
+                <h3 class="username">Hero Alom</h3>
+                <p class="message-text">
+                  Ullamco consequat aliquip quis id excepteur.
+                </p>
+                <span class="message-time">02:19 pm</span>
+              </div>
+            </div>
+            <div class="user-card">
+              <div class="image-side">
+                <img
+                  class="user-img"
+                  src="assets/images/img_5.jpeg"
+                  alt="user-avatar"
+                />
+                <span class="status green"></span>
+              </div>
+              <div class="user-info">
+                <h3 class="username">John Doe</h3>
+                <p class="message-text">
+                  Ullamco consequat aliquip quis id excepteur.
+                </p>
+                <span class="message-time">02:19 pm</span>
+              </div>
+            </div>
+            <div class="user-card">
+              <div class="image-side">
+                <img
+                  class="user-img"
+                  src="assets/images/img_4.jpeg"
+                  alt="user-avatar"
+                />
+                <span class="status orange"></span>
+              </div>
+              <div class="user-info">
+                <h3 class="username">Keiven Peterson</h3>
+                <p class="message-text">
+                  Ullamco consequat aliquip quis id excepteur.
+                </p>
+                <span class="message-time">02:19 pm</span>
+              </div>
+            </div>
+            <div class="user-card">
+              <div class="image-side">
+                <img
+                  class="user-img"
+                  src="assets/images/img_5.jpeg"
+                  alt="user-avatar"
+                />
+                <span class="status gray"></span>
+              </div>
+              <div class="user-info">
+                <h3 class="username">Keiven Robat</h3>
+                <p class="message-text">
+                  Ullamco consequat aliquip quis id excepteur.
+                </p>
+                <span class="message-time">02:19 pm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- right side - chat message -->
+      <div class="chat-message-container">
+        <!-- status bar -->
+        <div class="top-bar">
+          <div class="top-bar_user-info">
+            <div class="img-box">
+              <img class="user-img" src="assets/images/img_1.jpeg" />
+            </div>
+            <h3 class="top-bar_user-info_username">Jason Roy</h3>
+          </div>
+        </div>
+        <!-- chat message -->
+        <div class="chat-messages-box">
+          <div class="remote-user">
+            <div class="message-card">
+              <div class="message-card_main-remote">
+                <div class="image-side">
+                  <img
+                    class="user-img"
+                    src="assets/images/img_1.jpeg"
+                    alt="user-avatar"
+                  />
+                </div>
+                <div class="message-box">
+                  <div class="message-text-box">
+                    <p class="message-text">
+                      Deserunt nisi ullamco eiusmod ad. Elit sunt officia minim
+                      amet minim non exercitation do consectetur.
+                    </p>
+                  </div>
+                  <div class="message-card_footer">
+                    <p class="message-time">
+                      10 min ago
+                      <span class="message-status"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="local-user">
+            <div class="message-card">
+              <div class="message-card_main-local">
+                <div class="image-side">
+                  <img
+                    class="user-img"
+                    src="assets/images/img2.jpeg"
+                    alt="user-avatar"
+                  />
+                </div>
+                <div class="message-box">
+                  <div class="message-text-box">
+                    <p class="message-text">
+                      Deserunt nisi ullamco eiusmod ad. Elit sunt officia minim
+                      amet minim non exercitation do consectetur.
+                    </p>
+                  </div>
+                  <div class="message-card_footer">
+                    <p class="message-time">
+                      10 min ago
+                      <span class="message-status"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="remote-user">
+            <div class="message-card">
+              <div class="message-card_main-remote">
+                <div class="image-side">
+                  <img
+                    class="user-img"
+                    src="assets/images/img_1.jpeg"
+                    alt="user-avatar"
+                  />
+                </div>
+                <div class="message-box">
+                  <div class="message-text-box">
+                    <p class="message-text">
+                      Deserunt nisi ullamco eiusmod ad. Elit sunt officia minim
+                      amet minim non exercitation do consectetur.
+                    </p>
+                  </div>
+                  <div class="message-card_footer">
+                    <p class="message-time">
+                      10 min ago
+                      <span class="message-status"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="local-user">
+            <div class="message-card">
+              <div class="message-card_main-local">
+                <div class="image-side">
+                  <img
+                    class="user-img"
+                    src="assets/images/img2.jpeg"
+                    alt="user-avatar"
+                  />
+                </div>
+                <div class="message-box">
+                  <div class="message-text-box">
+                    <p class="message-text">
+                      Deserunt nisi ullamco eiusmod ad. Elit sunt officia minim
+                      amet minim non exercitation do consectetur.
+                    </p>
+                  </div>
+                  <div class="message-card_footer">
+                    <p class="message-time">
+                      10 min ago
+                      <span class="message-status"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="remote-user">
+            <div class="message-card">
+              <div class="message-card_main-remote">
+                <div class="image-side">
+                  <img
+                    class="user-img"
+                    src="assets/images/img_1.jpeg"
+                    alt="user-avatar"
+                  />
+                </div>
+                <div class="message-box">
+                  <div class="message-text-box">
+                    <p class="message-text">
+                      Deserunt nisi ullamco eiusmod ad. Elit sunt officia minim
+                      amet minim non exercitation do consectetur.
+                    </p>
+                  </div>
+                  <div class="message-card_footer">
+                    <p class="message-time">
+                      10 min ago
+                      <span class="message-status"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="local-user">
+            <div class="message-card">
+              <div class="message-card_main-local">
+                <div class="image-side">
+                  <img
+                    class="user-img"
+                    src="assets/images/img2.jpeg"
+                    alt="user-avatar"
+                  />
+                </div>
+                <div class="message-box">
+                  <div class="message-text-box">
+                    <p class="message-text">
+                      Deserunt nisi ullamco eiusmod ad. Elit sunt officia minim
+                      amet minim non exercitation do consectetur.
+                    </p>
+                  </div>
+                  <div class="message-card_footer">
+                    <p class="message-time">
+                      10 min ago
+                      <span class="message-status"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="remote-user">
+            <div class="message-card">
+              <div class="message-card_main-remote">
+                <div class="image-side">
+                  <img
+                    class="user-img"
+                    src="assets/images/img_1.jpeg"
+                    alt="user-avatar"
+                  />
+                </div>
+                <div class="message-box">
+                  <div class="message-text-box">
+                    <p class="message-text">
+                      Deserunt nisi ullamco eiusmod ad. Elit sunt officia minim
+                      amet minim non exercitation do consectetur.
+                    </p>
+                  </div>
+                  <div class="message-card_footer">
+                    <p class="message-time">
+                      10 min ago
+                      <span class="message-status"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-bar">
+          <div class="action-input-container">
+            <i class="fas fa-paperclip"></i>
+            <i class="far fa-smile"></i>
+          </div>
+          <div class="input-controller">
+            <input type="text" placeholder="Type message" name="message" />
+            <button type="button"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
