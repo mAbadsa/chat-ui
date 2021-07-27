@@ -5,4 +5,4 @@ How to use.
 ```
 git clone https://github.com/mAbadsa/chat-ui.git
 ```
-* Open inde.html file
+* Open index.html file
